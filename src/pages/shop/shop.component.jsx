@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import SHOP_DATA from '../../data/shop_data';
-import PropTypes from 'prop-types';
 
 import CollectionPreview from '../../components/collection-preview/collection-preview.component';
 
@@ -12,10 +11,6 @@ class ShopPage extends Component {
       collections: SHOP_DATA
     };
   }
-
-  static propTypes = {
-    collections: PropTypes.array.isRequired
-  };
 
   render() {
     const { collections } = this.state;
