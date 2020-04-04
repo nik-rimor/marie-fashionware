@@ -13,17 +13,17 @@ class SignIn extends React.Component {
 
     this.state = {
       email: '',
-      password: ''
+      password: '',
     };
   }
 
-  handleSubmit = e => {
-    e.prevent.default();
+  handleSubmit = (e) => {
+    e.preventDefault();
 
     this.setState({ email: '', password: '' });
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     const { value, name } = e.target;
 
     this.setState({ [name]: value });
